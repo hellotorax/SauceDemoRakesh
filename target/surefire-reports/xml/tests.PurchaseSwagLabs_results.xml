@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Opera_Browser"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.414">
+  <properties />
+  
+  
+            <testcase name="sortFilterZtoA" time="0.363" classname="tests.PurchaseSwagLabs" />
+                <testcase name="verifyConfirmatioinMessage" time="0.048" classname="tests.PurchaseSwagLabs" />
+                <testcase name="fillYourInformation" time="0.560" classname="tests.PurchaseSwagLabs" />
+                <testcase name="transactionComplete" time="0.053" classname="tests.PurchaseSwagLabs" />
+                <testcase name="validateProductsSorted" time="0.071" classname="tests.PurchaseSwagLabs" />
+                <testcase name="addItemstoCart" time="0.725" classname="tests.PurchaseSwagLabs" />
+                <testcase name="loginSauceDemo" time="1.108" classname="tests.PurchaseSwagLabs" />
+                <testcase name="clickOnFinishPage" time="0.253" classname="tests.PurchaseSwagLabs" />
+                <testcase name="clickOnCheckOut" time="0.233" classname="tests.PurchaseSwagLabs" />
+      
+</testsuite>

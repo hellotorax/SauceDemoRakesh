@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-29T19:25:00 IST" name="runtest" finished-at="2021-08-29T19:25:27 IST" duration-ms="27425">
+    <groups>
+    </groups>
+    <test started-at="2021-08-29T19:25:00 IST" name="Opera_Browser" finished-at="2021-08-29T19:25:27 IST" duration-ms="27425">
+      <class name="tests.PurchaseSwagLabs">
+        <test-method is-config="true" signature="Config()[pri:0, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:00 IST" name="Config" finished-at="2021-08-29T19:25:00 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Config -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:00 IST" name="launchBrowser" finished-at="2021-08-29T19:25:07 IST" duration-ms="7197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:07 IST" name="setup" finished-at="2021-08-29T19:25:07 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginSauceDemo()[pri:1, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:07 IST" name="loginSauceDemo" description="Login" finished-at="2021-08-29T19:25:08 IST" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSauceDemo -->
+        <test-method signature="sortFilterZtoA()[pri:2, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:10 IST" name="sortFilterZtoA" description="Sort items" finished-at="2021-08-29T19:25:11 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortFilterZtoA -->
+        <test-method signature="validateProductsSorted()[pri:3, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:12 IST" name="validateProductsSorted" description="Get all the items in the page" finished-at="2021-08-29T19:25:13 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductsSorted -->
+        <test-method signature="addItemstoCart()[pri:4, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:14 IST" name="addItemstoCart" description="Add items to cart" finished-at="2021-08-29T19:25:15 IST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemstoCart -->
+        <test-method signature="clickOnCheckOut()[pri:5, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:17 IST" name="clickOnCheckOut" description="Click on CheckOut" finished-at="2021-08-29T19:25:17 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckOut -->
+        <test-method signature="fillYourInformation(builder.YourInfoBuilder)[pri:6, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:19 IST" name="fillYourInformation" description="Enter your Information" data-provider="saucedemo" finished-at="2021-08-29T19:25:19 IST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[builder.YourInfoBuilder@7c6442c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillYourInformation -->
+        <test-method signature="clickOnFinishPage()[pri:7, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:21 IST" name="clickOnFinishPage" description="ClickOnFinishPage" finished-at="2021-08-29T19:25:21 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnFinishPage -->
+        <test-method signature="transactionComplete()[pri:8, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:23 IST" name="transactionComplete" description="Transaction Complete Page" finished-at="2021-08-29T19:25:23 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactionComplete -->
+        <test-method signature="verifyConfirmatioinMessage()[pri:9, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:24 IST" name="verifyConfirmatioinMessage" description="Verify Confirmatioin message" finished-at="2021-08-29T19:25:24 IST" depends-on-methods="tests.PurchaseSwagLabs.clickOnFinishPage" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmatioinMessage -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:26 IST" name="tearDownBrowser" finished-at="2021-08-29T19:25:27 IST" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.PurchaseSwagLabs@130d63be]" started-at="2021-08-29T19:25:27 IST" name="afterTest" description="After test info" finished-at="2021-08-29T19:25:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.PurchaseSwagLabs -->
+    </test> <!-- Opera_Browser -->
+  </suite> <!-- runtest -->
+</testng-results>
