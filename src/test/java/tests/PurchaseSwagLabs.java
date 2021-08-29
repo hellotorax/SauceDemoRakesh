@@ -71,9 +71,10 @@ public class PurchaseSwagLabs extends BaseTest {
 
 	@Test(priority=2,description = "Sort items")
 	public void sortFilterZtoA() {
+		productsPage.verifyProductsPage();
 		productsPage.selectSortDropDownValue(sortValue);
 	}
-	
+
 	@Test(priority=3,description = "Get all the items in the page")
 	public void validateProductsSorted() {
 		List<String> expectedSortedList = Arrays.asList("Test.allTheThings() T-Shirt (Red)",
@@ -97,6 +98,8 @@ public class PurchaseSwagLabs extends BaseTest {
 
 	@Test(priority=5,description = "Click on CheckOut")
 	public void clickOnCheckOut() {
+
+		yourCartPage.verifyYourCartPage();
 		yourCartPage.checkOutProducts();
 	}
 

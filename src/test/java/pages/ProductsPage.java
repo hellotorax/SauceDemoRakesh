@@ -23,7 +23,9 @@ public class ProductsPage extends BasePage{
 	@FindBy(xpath = "//a[@class='shopping_cart_link']")
 	WebElement cartBadge;
 	
-
+	@FindBy(xpath="//span[@class='title']")
+	WebElement productsTitle;
+	
 	public ProductsPage(WebDriver driver){
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -33,6 +35,12 @@ public class ProductsPage extends BasePage{
 
 	}
 
+	public void verifyProductsPage(){
+		waitUtil.isElementVisible(productsTitle, explicitTimeOut);
+		productsTitle.isDisplayed();
+	}
+	
+	
 	public void selectSortDropDownValue(String value) {
 		waitUtil.isElementVisible(sortFilter, explicitTimeOut);
 		helperUtil.selectByValue(sortFilter, value);

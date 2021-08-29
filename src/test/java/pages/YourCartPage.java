@@ -16,6 +16,9 @@ public class YourCartPage extends BasePage{
 
 	@FindBy(id = "checkout")
 	WebElement checkout;
+	
+	@FindBy(xpath="//span[@class='title']")
+	WebElement yourCart;
 
 	public YourCartPage(WebDriver driver){
 		super(driver);
@@ -24,6 +27,11 @@ public class YourCartPage extends BasePage{
 		helperUtil = new HelperUtil(driver);
 		explicitTimeOut = waitUtil.getExplicitTimeout();
 
+	}
+	
+	public void verifyYourCartPage(){
+		waitUtil.isElementVisible(yourCart, explicitTimeOut);
+		yourCart.isDisplayed();
 	}
 	
 	public void checkOutProducts() {
