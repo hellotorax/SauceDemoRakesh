@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Opera_Browser"
+<testsuite name="firefox_browser"
            tests="9"
            failures="0"
            errors="0"
            skipped="0"
-           time="5.550">
+           time="4.626">
   <properties />
   
   
-            <testcase name="sortFilterZtoA" time="0.473" classname="tests.PurchaseSwagLabs" />
-                <testcase name="fillYourInformation" time="0.868" classname="tests.PurchaseSwagLabs" />
-                <testcase name="transactionComplete" time="0.089" classname="tests.PurchaseSwagLabs" />
-                <testcase name="loginSauceDemo" time="2.489" classname="tests.PurchaseSwagLabs" />
-                <testcase name="addItemstoCart" time="0.795" classname="tests.PurchaseSwagLabs" />
-                <testcase name="validateProductsSorted" time="0.120" classname="tests.PurchaseSwagLabs" />
-                <testcase name="clickOnFinishPage" time="0.255" classname="tests.PurchaseSwagLabs" />
-                <testcase name="clickOnCheckOut" time="0.376" classname="tests.PurchaseSwagLabs" />
-                <testcase name="verifyConfirmatioinMessage" time="0.085" classname="tests.PurchaseSwagLabs" />
+            <testcase name="clickOnFinishPage" time="0.269" classname="tests.PurchaseSwagLabs" />
+                <testcase name="fillYourInformation" time="0.746" classname="tests.PurchaseSwagLabs" />
+                <testcase name="clickOnCheckOut" time="0.433" classname="tests.PurchaseSwagLabs" />
+                <testcase name="transactionComplete" time="0.106" classname="tests.PurchaseSwagLabs" />
+                <testcase name="verifyConfirmatioinMessage" time="0.100" classname="tests.PurchaseSwagLabs" />
+                <testcase name="sortFilterZtoA" time="0.493" classname="tests.PurchaseSwagLabs" />
+                <testcase name="addItemstoCart" time="0.778" classname="tests.PurchaseSwagLabs" />
+                <testcase name="loginSauceDemo" time="1.537" classname="tests.PurchaseSwagLabs" />
+                <testcase name="validateProductsSorted" time="0.164" classname="tests.PurchaseSwagLabs" />
       
 </testsuite>

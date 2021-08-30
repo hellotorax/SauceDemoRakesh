@@ -3,7 +3,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="runtest" verbose="1">
+<suite name="runtest" verbose="1" thread-count="2" parallel="tests">
 
     <listeners>
 
@@ -15,10 +15,19 @@
 
     </listeners>
 
-    <!--Opera tests below-->
+    <!--firefoxtest below-->
 
-    <test name="Opera_Browser" preserve-order="true">
+    <test name="firefox_browser" preserve-order="true">
         <parameter name="browser" value="firefox"/>
+        <parameter name="infra" value="local"></parameter>
+        <classes>
+            <class name="tests.PurchaseSwagLabs"/>
+        </classes>
+    </test>
+      <!--Chrometest below-->
+     <test name="Opera_Browser" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+         <parameter name="infra" value="local"></parameter>
         <classes>
             <class name="tests.PurchaseSwagLabs"/>
         </classes>

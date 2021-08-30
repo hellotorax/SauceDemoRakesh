@@ -22,13 +22,13 @@ public class YourInformationPage extends BasePage{
 
 	@FindBy(id = "last-name")
 	WebElement lastName;
-	
+
 	@FindBy(id = "postal-code")
 	WebElement postalCode;
-	
+
 	@FindBy(id="continue")
 	WebElement btnContinue;
-	
+
 	@FindBy(xpath="//span[@class='title']")
 	WebElement checkOutTitle;
 
@@ -39,34 +39,34 @@ public class YourInformationPage extends BasePage{
 		helperUtil = new HelperUtil(driver);
 		explicitTimeOut = waitUtil.getExplicitTimeout();
 	}
-	
-	 public void veriFyYourInformationPage(){
-	        waitUtil.isElementVisible(checkOutTitle, explicitTimeOut);
-	        checkOutTitle.isDisplayed();
-	    }
+
+	public void veriFyYourInformationPage(){
+		waitUtil.isElementVisible(checkOutTitle, explicitTimeOut);
+		checkOutTitle.isDisplayed();
+	}
 
 
-	    public void enterFirstName(String value){
-	        waitUtil.isElementVisible(firstName, explicitTimeOut);
-	        firstName.clear();
-	        firstName.sendKeys(value);
-	
-	    }
-	    
-	    public void enterLastName(String value){
-	        waitUtil.isElementVisible(lastName, explicitTimeOut);
-	        lastName.clear();
-	        lastName.sendKeys(value);
-	
-	    }
-	    
-	    public void enterPostalCode(String value){
-	        waitUtil.isElementVisible(postalCode, explicitTimeOut);
-	        postalCode.clear();
-	        postalCode.sendKeys(value);
-	
-	    }
-	    public void clickOnContinue() {
-	    	btnContinue.click();
-	    }
+	public void enterFirstName(String value){
+		waitUtil.isElementVisible(firstName, explicitTimeOut);
+		firstName.clear();
+		firstName.sendKeys(value);
+
+	}
+
+	public void enterLastName(String value){
+		waitUtil.isElementVisible(lastName, explicitTimeOut);
+		lastName.clear();
+		lastName.sendKeys(value);
+
+	}
+
+	public void enterPostalCode(String value){
+		waitUtil.isElementVisible(postalCode, explicitTimeOut);
+		postalCode.clear();
+		postalCode.sendKeys(value);
+
+	}
+	public void clickOnContinue() {
+		btnContinue.click();
+	}
 }

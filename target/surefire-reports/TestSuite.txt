@@ -1,4 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.877 s - in TestSuite
+Tests run: 9, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 334.187 s <<< FAILURE! - in TestSuite
+loginSauceDemo(tests.PurchaseSwagLabs)  Time elapsed: 300.403 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out waiting for page to load.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H4JITLN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:34321/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 094b1865-ba23-47ee-82eb-1355e49dfac5
+	at tests.PurchaseSwagLabs.loginSauceDemo(PurchaseSwagLabs.java:68)
+
+addItemstoCart(tests.PurchaseSwagLabs)  Time elapsed: 307.043 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H4JITLN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+loginSauceDemo(tests.PurchaseSwagLabs)  Time elapsed: 309.095 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/127.0.0.1:34321
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H4JITLN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:34321
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+afterTest(tests.PurchaseSwagLabs)  Time elapsed: 315.701 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H4JITLN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+
+afterTest(tests.PurchaseSwagLabs)  Time elapsed: 317.191 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H4JITLN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:34321
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at tests.PurchaseSwagLabs.afterTest(PurchaseSwagLabs.java:152)
+

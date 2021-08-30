@@ -65,7 +65,8 @@ public class PurchaseSwagLabs extends BaseTest {
 
 	@Test(priority=1,description="Login")
 	public void loginSauceDemo() {
-		helperUtil.navigatePage(baseUrl);
+		driver.get(baseUrl);
+		//helperUtil.navigatePage(baseUrl);
 		loginPage.sauceDemoLogin(userName, password);
 	}
 
